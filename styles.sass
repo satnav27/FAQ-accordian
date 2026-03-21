@@ -1,0 +1,90 @@
+:root
+  --White: hsl(0, 100%, 100%)
+  --Purple-100: hsl(275, 100%, 97%)
+  --Purple-600: hsl(292, 16%, 49%)
+  --Purple-950: hsl(292, 42%, 14%)
+
+
+
+*
+  font-family: 'Work Sans'
+  margin: 0
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  min-height: 100vh
+  background: #f5f5f5;
+
+.background-img
+  position: absolute
+  top: 0px
+  left: 0px
+  width: 100%
+  height: 400px
+  object-fit: cover
+  z-index: -2
+
+.container
+  background-color: var(--White)
+  width: 100%
+  max-width: 375px
+  display: flex
+  flex-direction: column
+  padding: 20px
+  border-radius: 10px
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+
+@media screen and (min-width: 700px)
+  .container
+    max-width: 600px
+
+
+
+
+
+.main-h
+  display: flex
+  font-size: 20px
+  gap: 20px
+  margin-bottom: 20px
+
+  .img-star
+    width: 30px
+
+.main-section
+  display: flex
+  flex-direction: column
+
+.section-qa
+  display: flex
+  flex-direction: column
+  padding-top: 40px
+
+  .question
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    h2
+      padding-right: 20px
+
+  .img-plus-1
+    display: block
+    .img-minus-1
+      display: none
+
+
+
+
+  h2
+    font-size: 18px
+
+  .hidden
+    display: none
+    margin-right: 30px
+
+.hiddenStyle
+  padding-top: 10px
