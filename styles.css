@@ -83,7 +83,7 @@ body {
 .section-qa h2 {
   font-size: 18px;
 }
-.section-qa .hidden {
+.section-qa .hidden-p {
   display: none;
   margin-right: 30px;
 }
