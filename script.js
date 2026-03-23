@@ -14,19 +14,19 @@
 const faqs = document.querySelectorAll(".section-qa");
 
 faqs.forEach((faq) => {
-  const btn = faq.querySelector(".question-btn")
+  const btn = faq.querySelector(".question-btn");
   const plusImg = faq.querySelector(".img-plus");
   const minusImg = faq.querySelector(".img-minus");
-  const paragraph = faq.querySelector(".hidden");
+  const paragraph = faq.querySelector(".hidden-p");
 
   // Initially show plus, hide minus
   plusImg.style.display = "inline";
   minusImg.style.display = "none";
 
   btn.addEventListener("click", () => {
-    paragraph.classList.toggle("hidden");
+    paragraph.classList.toggle("hidden-p");
 
-    if (paragraph.classList.contains("hidden")) {
+    if (paragraph.classList.contains("hidden-p")) {
       plusImg.style.display = "inline";
       minusImg.style.display = "none";
     } else {
